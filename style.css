@@ -1,0 +1,93 @@
+body{
+    color:white;
+    font-family: sans-serif;
+    margin-bottom: 32px;
+    justify-content: center;
+    background-color: rgb(47, 46, 46);
+}
+main{
+    justify-content: center;
+    text-align: center;
+  
+}
+main h1{
+    font-size: 4em;
+    color: rgb(21, 20, 20);
+    margin: 2em;
+    -webkit-text-stroke: 1px rgb(114, 113, 113);
+}
+.container{
+  margin: 0px auto ;
+    display: grid;
+    grid-template-rows: max-content;
+    align-items: center;
+    max-width: 650px;
+    border-radius: 32px;
+    box-shadow: 0px 0px 50px rgba(198, 198, 198, 0.645);
+}
+.container .result input{
+    display: block;
+    max-width: 100%;
+    background-color: black;
+    color:white;
+    font-size: 3em;
+    font-weight: 500;
+    font-family: sans-serif;
+    border: none;
+    min-height: 150px;
+    text-align: right;
+    padding: 32px;
+    border-radius: 32px 32px 0px 0px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    
+}
+.first-row{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    
+   
+}
+.first-row button{
+    background-color: rgb(215, 215, 216);
+    border: 1px solid grey;
+    min-height: 90px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.second-row{
+display: grid;
+grid-template-columns: repeat(4,25%);
+}
+.second-row button{
+    border: 1px solid grey;
+    min-height: 90px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.second-row .result-btn{
+    grid-column:4/4 ;
+    grid-row: 1/5 ;
+}
+button{
+    border-radius: 0px;
+    background-color: rgb(243, 242, 242);
+    border: none;
+    cursor: pointer;
+}
+.result-btn button{
+   height: 100%;
+    width:100%;
+    background-color: salmon;
+    border-radius: 0px 0px 32px 0px;
+}
+
+.border{
+    border-radius: 0px 0px 0px 32px;
+}
